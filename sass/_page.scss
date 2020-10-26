@@ -3,6 +3,17 @@
     margin: auto;
 }
 
+.subtitle {
+    display: flex;
+    align-items: flex-start;
+
+    &__icon {
+        margin-right: 1rem;
+        transform: translateY(5px);
+    }
+}
+
+
 .recipe-img {
     width: 100%;
     height: auto;
