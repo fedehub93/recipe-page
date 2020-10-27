@@ -1,3 +1,7 @@
+body {
+    line-height: 1.8;
+}
+
 .heading-1 {
     font-family: "Playfair Display", sans-serif;
     font-size: 4.8rem;
@@ -26,4 +30,17 @@
     font-weight: 500;
     font-style: italic;
     color: var(--color-gray-2);
+}
+
+.source {
+    font-family: "Montserrat", serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--color-gray-4);
+
+    a {
+        text-decoration: none;
+        color: currentColor;
+    }
 }

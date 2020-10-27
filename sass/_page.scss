@@ -16,12 +16,42 @@
 
 .container {
     display: grid;
-    grid-template-columns: minmax(min-content, 75%) 1fr;
+    grid-template-columns: 1fr 25rem;
     column-gap: 2rem;
+
+    @media only screen and (max-width: $media-screen-medium) {
+        grid-template-columns: 1fr;
+    }
+
+    &__column-left {
+        @media only screen and (max-width: $media-screen-medium) {
+            grid-row: 2 / 3;
+        }
+    }
+
+    &__column-right {
+        @media only screen and (max-width: $media-screen-medium) {
+            grid-row: 1 / 2;
+        }
+    }
 }
 
 
 .recipe-img {
     width: 100%;
     height: auto;
+    margin-bottom: 3rem;
+    
+    @media only screen and (max-width: $media-screen-medium) {
+        margin-bottom: 0;
+    }
+}
+
+.footer {
+    font-family: "Montserrat", serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--color-gray-4);
+    padding: 2rem;
 }
