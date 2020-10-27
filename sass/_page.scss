@@ -1,5 +1,6 @@
 .wrapper {
-    width: 100rem;
+    max-width: 100rem;
+    padding: 0 2.5rem;
     margin: auto;
 }
 
@@ -11,6 +12,12 @@
         margin-right: 1rem;
         transform: translateY(5px);
     }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: minmax(min-content, 75%) 1fr;
+    column-gap: 2rem;
 }
 
 

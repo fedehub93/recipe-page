@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap");
 :root {
   --color-black: #000;
+  --color-black-rgb: 0,0,0;
   --color-gray-1: #333;
   --color-gray-2: #4F4F4F;
   --color-gray-3: #C4C4C4;
@@ -25,6 +26,19 @@ html {
   font-weight: 700;
   color: var(--color-black); }
 
+.heading-2 {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--color-gray-1); }
+
+.heading-3 {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--color-gray-1); }
+
 .paragraph {
   font-family: "Montserrat", serif;
   font-size: 1.4rem;
@@ -38,6 +52,12 @@ html {
 .u-mb-medium {
   margin-bottom: 4rem; }
 
+.bold {
+  font-weight: bold; }
+
+.bold {
+  font-style: italic; }
+
 .checkbox-group {
   margin-top: 2rem;
   position: relative;
@@ -47,9 +67,15 @@ html {
   .checkbox-group__checkbox {
     display: none; }
   .checkbox-group__checkbox:checked + .checkbox-group__checkmark {
-    background-color: var(--color-secondary); }
+    background-color: var(--color-secondary);
+    border: 1px solid transparent; }
   .checkbox-group__checkbox:checked + .checkbox-group__checkmark::after {
     opacity: 1; }
+  .checkbox-group__text {
+    font-family: "Montserrat", serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: --color-gray-1; }
   .checkbox-group__checkmark {
     display: block;
     width: 2.5rem;
@@ -57,7 +83,7 @@ html {
     border: 1px solid var(--color-gray-3);
     border-radius: 3px;
     background-color: transparent;
-    margin-right: 0.5rem;
+    margin-right: 1rem;
     position: relative;
     transition: background-color 0.2s; }
     .checkbox-group__checkmark::after {
@@ -75,8 +101,40 @@ html {
       opacity: 0;
       transition: all 0.2s; }
 
+.recipe-info {
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(var(--color-black-rgb), 0.15); }
+  .recipe-info__grid {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 1rem;
+    row-gap: 0.5rem;
+    align-items: center; }
+    .recipe-info__grid:not(:last-child) {
+      margin-bottom: 4rem; }
+    .recipe-info__grid--primary {
+      color: var(--color-gray-1); }
+    .recipe-info__grid--secondary {
+      color: var(--color-secondary); }
+  .recipe-info__icon {
+    grid-row: 1 / 3;
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: currentColor; }
+  .recipe-info__title {
+    font-family: 'Montserrat', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-gray-4); }
+  .recipe-info__value {
+    font-family: 'Montserrat', serif;
+    font-size: 1.4rem;
+    font-weight: 500; }
+
 .wrapper {
-  width: 100rem;
+  max-width: 100rem;
+  padding: 0 2.5rem;
   margin: auto; }
 
 .subtitle {
@@ -85,6 +143,11 @@ html {
   .subtitle__icon {
     margin-right: 1rem;
     transform: translateY(5px); }
+
+.container {
+  display: grid;
+  grid-template-columns: minmax(min-content, 75%) 1fr;
+  column-gap: 2rem; }
 
 .recipe-img {
   width: 100%;

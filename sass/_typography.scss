@@ -5,6 +5,21 @@
     color: var(--color-black);
 }
 
+.heading-2 {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--color-gray-1);
+}
+
+.heading-3 {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--color-gray-1);
+}
+
 .paragraph {
     font-family: "Montserrat", serif;
     font-size: 1.4rem;
