@@ -35,7 +35,7 @@
 
 ## Overview
 
-![screenshot](https://fedehub93.github.io/recipe-page/preview.jpg)
+![screenshot](https://fedehub93.github.io/recipe-page/preview.png)
 
 ### Built With
 
