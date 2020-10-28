@@ -49,10 +49,10 @@
     &::after {
       content: "";
       position: absolute;
-      left: 9px;
-      top: 5px;
-      width: 5px;
-      height: 10px;
+      left: .9rem;
+      top: .5rem;
+      width: .5rem;
+      height: 1rem;
       border: solid white;
       border-width: 0 2px 2px 0;
       -webkit-transform: rotate(45deg);
