@@ -35,7 +35,7 @@
 
 ## Overview
 
-![screenshot](https://fedehub93.github.io/recipe/preview.jpg)
+![screenshot](https://fedehub93.github.io/recipe-page/preview.jpg)
 
 ### Built With
 
@@ -65,7 +65,3 @@ $ git clone https://github.com/fedehub93/recipe-page
 
 # Install dependencies
 $ npm install
-
-# Run the app
-$ npm start
-```
